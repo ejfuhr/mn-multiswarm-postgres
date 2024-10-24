@@ -1,0 +1,33 @@
+micronaut:
+  application:
+    name: mn-multiswarm-postgres
+r2dbc:
+  datasources:
+    default:
+
+      url: r2dbc:postgresql://localhost:5432/webfluxdb
+      schema-generate: CREATE  # NONE
+      username: postgres
+      password: Louis1401
+
+      dialect: POSTGRES
+      db-type: postgres
+
+  router:
+    static-resources:
+      webjars:
+        paths: classpath:/META-INF/resources/webjars
+        mapping=/webjars/**:
+
+      css:
+        mapping: /css/*.css
+        paths: classpath:/static/css
+
+
+      images:
+        mapping: /images/**
+        paths: classpath:/static/images
+
+logger:
+  levels:
+    io.micronaut.http: INFO
