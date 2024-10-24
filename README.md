@@ -1,3 +1,8 @@
+## Multiswarm pattern in Kotlin
+First here's acknowledging Donato Rimenti for his article on Baeldung: 
+[Multi-Swarm Optimization Algorithm in Java](https://www.baeldung.com/java-multi-swarm-algorithm)
+
+
 ## Micronaut 4.6.3 Documentation
 
 - [User Guide](https://docs.micronaut.io/4.6.3/guide/index.html)
