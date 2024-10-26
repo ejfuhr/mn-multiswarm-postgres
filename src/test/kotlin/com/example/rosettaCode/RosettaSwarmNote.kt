@@ -2,9 +2,17 @@ package com.example.rosettaCode
 /**
 from https://rosettacode.org/wiki/Particle_swarm_optimization
 
-Particle Swarm Optimization (PSO) is an optimization method in which multiple candidate solutions ('particles') migrate through the solution space under the influence of local and global best known positions. PSO does not require that the objective function be differentiable and can optimize over very large problem spaces, but is not guaranteed to converge. The method should be demonstrated by application of the functions recommended below, and possibly other standard or well-known optimization test cases.
+Particle Swarm Optimization (PSO) is an optimization method in which multiple candidate solutions
+('particles') migrate through the solution space under the influence of local and global best known
+positions. PSO does not require that the objective function be differentiable and can optimize over
+very large problem spaces, but is not guaranteed to converge. The method should be demonstrated by
+application of the functions recommended below, and possibly other standard or well-known optimization
+test cases.
 
-The goal of parameter selection is to ensure that the global minimum is discriminated from any local minima, and that the minimum is accurately determined, and that convergence is achieved with acceptable resource usage. To provide a common basis for comparing implementations, the following test cases are recommended:
+The goal of parameter selection is to ensure that the global minimum is discriminated from any
+local minima, and that the minimum is accurately determined, and that convergence is achieved
+with acceptable resource usage. To provide a common basis for comparing implementations,
+the following test cases are recommended:
 
 McCormick function - bowl-shaped, with a single minimum
 function parameters and bounds (recommended):
