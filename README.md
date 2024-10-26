@@ -1,5 +1,6 @@
 ## Multiswarm pattern in Kotlin
-First here's acknowledging Donato Rimenti for his article on Baeldung: 
+- This project is an attempt to walk through handling the swarm pattern - but with multiple swarms or solutions
+- Here's acknowledging Donato Rimenti for his article on Baeldung: 
 [Multi-Swarm Optimization Algorithm in Java](https://www.baeldung.com/java-multi-swarm-algorithm)
 
 
