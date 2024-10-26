@@ -1,5 +1,7 @@
 ## Multiswarm pattern in Kotlin
 - This project is an attempt to walk through handling the swarm pattern - but with multiple swarms or solutions
+- Note that we will be playing with the Particle Swarm Optimization [as seen here](https://rosettacode.org/wiki/Particle_swarm_optimization)
+- I hope to be pulling apart the above and playing with the coroutine application of it through a service or controller
 - Here's acknowledging Donato Rimenti for his article on Baeldung: 
 [Multi-Swarm Optimization Algorithm in Java](https://www.baeldung.com/java-multi-swarm-algorithm)
 
