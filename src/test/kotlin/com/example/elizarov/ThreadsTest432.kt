@@ -82,7 +82,7 @@ class ThreadsTest432 {
     }
 
     @Test
-    @Order(4)
+    @Order(5)
     fun `as coroutineDispathcher with ArrayBlockingQueue`() = runTest {
         val list = mutableListOf("a", "a dog", "b dog")
         val queue = ConcurrentLinkedQueue<String>()
