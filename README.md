@@ -4,6 +4,7 @@
 - I hope to be pulling apart the above and playing with the coroutine application of it through a service or controller
 - Here's acknowledging Donato Rimenti for his article on Baeldung: 
 [Multi-Swarm Optimization Algorithm in Java](https://www.baeldung.com/java-multi-swarm-algorithm)
+- Here is a long explanation of [Particle Swarm Optimization](./RosettaSwarmNote.md)
 
 
 ## Micronaut 4.6.3 Documentation
