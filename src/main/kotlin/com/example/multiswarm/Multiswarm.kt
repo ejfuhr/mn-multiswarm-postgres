@@ -74,6 +74,11 @@ class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: Fitnes
                 val particleOldPosition = particle!!.position.clone()
 
                 // Calculate the particle fitness.
+/*                for (i in 0 until particleOldPosition.size){
+                    val p = particleOldPosition[i]
+                    println("$i $p")
+                }*/
+
 
                 particle.fitness = fitnessFunction?.getFitness(particleOldPosition)!!
                         //particle.setFitness(fitnessFunction.getFitness(particleOldPosition))

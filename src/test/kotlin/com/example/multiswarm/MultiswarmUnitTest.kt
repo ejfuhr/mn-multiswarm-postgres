@@ -40,6 +40,9 @@ class MultiswarmUnitTest {
             if(i <= 10  || i > 995){
                 fitnessFound(multiswarm)
             }
+            if(multiswarm.bestPosition[0] == 1080L){
+                println("i == $i multiswarm.bestFitness = ${multiswarm.bestFitness.toInt()}")
+            }
         }
 
         println(
