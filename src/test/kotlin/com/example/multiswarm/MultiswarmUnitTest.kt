@@ -13,8 +13,8 @@ class MultiswarmUnitTest {
      * Rule for handling expected failures. We use this since this test may
      * actually fail due to bad luck in the random generation.
      */
-/*    @Rule
-    var mayFailRule: MayFailRule = MayFailRule()*/
+    /*    @Rule
+        var mayFailRule: MayFailRule = MayFailRule()*/
 
     /**
      * Tests the multiswarm algorithm with a generic problem. The problem is the
@@ -42,6 +42,8 @@ class MultiswarmUnitTest {
             }
             if(multiswarm.bestPosition[0] == 1080L){
                 println("i == $i multiswarm.bestFitness = ${multiswarm.bestFitness.toInt()}")
+                println("   multiswarm.bestPosition[0] and m.bestPostion[1] "+
+                        "${multiswarm.bestPosition[0]}  - ${multiswarm.bestPosition[1]}")
             }
         }
 
