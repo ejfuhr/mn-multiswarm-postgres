@@ -27,7 +27,7 @@ class Swarm(numParticles: Int) {
     /**
      * The best position found within the particles of this swarm.
      */
-    lateinit var bestPosition: LongArray
+    var bestPosition: LongArray = longArrayOf()
 
     /**
      * Gets the [.bestFitness].
@@ -67,10 +67,7 @@ class Swarm(numParticles: Int) {
                 random.nextInt(Constants.PARTICLE_UPPER_BOUND).toLong()
             )
             particles[i] = Particle(
-                initialParticlePosition, initialParticleSpeed,
-                //fitness = TODO(),
-                //bestPosition = TODO(),
-                //bestFitness = TODO()
+                initialParticlePosition, initialParticleSpeed
             )
         }
     }

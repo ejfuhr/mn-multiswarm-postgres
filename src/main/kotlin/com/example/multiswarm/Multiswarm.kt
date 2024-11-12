@@ -5,10 +5,11 @@ import kotlin.random.Random
 
 /**
  * Represents a collection of [Swarm].
+ * added open to extend class
  *
  * @author Donato Rimenti
  */
-class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: FitnessFunction?) {
+open class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: FitnessFunction?) {
     /**
      * The swarms managed by this multiswarm.
      */
@@ -23,7 +24,7 @@ class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: Fitnes
      * The best position found within all the [.swarms].
      */
     var bestPosition: LongArray = longArrayOf()
-        //private set
+
 
     /**
      * Gets the [.bestFitness].
@@ -34,7 +35,7 @@ class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: Fitnes
      * The best fitness score found within all the [.swarms].
      */
     var bestFitness: Double = Double.NEGATIVE_INFINITY
-        //private set
+    //private set
 
     /**
      * A random generator.
@@ -81,13 +82,13 @@ class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: Fitnes
 
 
                 particle.fitness = fitnessFunction?.getFitness(particleOldPosition)!!
-                        //particle.setFitness(fitnessFunction.getFitness(particleOldPosition))
+                //particle.setFitness(fitnessFunction.getFitness(particleOldPosition))
 
-                    // Check if a new best position has been found for the particle
-                    // itself, within the swarm and the multiswarm.
-                    if (particle.fitness!! > particle.bestFitness) {
-                        particle.bestFitness = particle.fitness!!
-                        particle.bestPosition = particleOldPosition
+                // Check if a new best position has been found for the particle
+                // itself, within the swarm and the multiswarm.
+                if (particle.fitness!! > particle.bestFitness) {
+                    particle.bestFitness = particle.fitness!!
+                    particle.bestPosition = particleOldPosition
 
 
                         if (particle.fitness!! > swarm.bestFitness) {
@@ -101,9 +102,9 @@ class Multiswarm(numSwarms: Int, particlesPerSwarm: Int, fitnessFunction: Fitnes
                         }
                     }
 
-                    // Updates the particle position by adding the speed to the
-                    // actual position.
-                    val  position = particle.position
+                // Updates the particle position by adding the speed to the
+                // actual position.
+                val  position = particle.position
                 val speed = particle.speed
 
                 position[0] += speed[0]
