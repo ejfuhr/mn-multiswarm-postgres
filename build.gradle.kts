@@ -44,6 +44,9 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
 
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     runtimeOnly("org.postgresql:r2dbc-postgresql")
@@ -54,12 +57,11 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-params")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlinVersion")
 
+    testImplementation ("io.mockk:mockk:$mockkVersion")
+    testImplementation("io.projectreactor:reactor-test")
+
     testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test")
 
-    testImplementation ("io.mockk:mockk:$mockkVersion")
-    //testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version")
-    //testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.projectreactor:reactor-test")
 }
 
 
