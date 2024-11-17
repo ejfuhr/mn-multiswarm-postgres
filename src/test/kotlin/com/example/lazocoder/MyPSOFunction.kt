@@ -57,4 +57,5 @@ internal object MyPSOFunction {
         val p3 = x.pow(6.0) / 6
         return p1 - p2 + p3 + x * y + y * y
     }
+
 }

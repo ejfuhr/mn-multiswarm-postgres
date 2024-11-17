@@ -79,13 +79,13 @@ class BuildMultiswarmFromLists {
         }
         println("myMapAsync size ${myMapAsync.size}")
     val lastSwarm = myMapAsync.last()
-        println("lastSwarm ${lastSwarm.bestFitness}")
-        println("lastSwarm ${lastSwarm.bestPosition[0]} ${lastSwarm.bestPosition[1]}")
-        println("lastSwarm ${lastSwarm.particles.size} ")
+        println("lastSwarm bestFitness ${lastSwarm.bestFitness}")
+        println("lastSwarm bestPosition[0] & [1] ${lastSwarm.bestPosition[0]} ${lastSwarm.bestPosition[1]}")
+        println("lastSwarm lastSwarm.particles.size ${lastSwarm.particles.size} ")
 
     }
 
-    private fun doMainLoop(swarms: MutableList<Swarm>): MutableList<Swarm> {
+    fun doMainLoop(swarms: MutableList<Swarm>): MutableList<Swarm> {
         for (swarm in swarms) {
             for (particle in swarm!!.particles) {
                 val particleOldPosition = particle!!.position.clone()

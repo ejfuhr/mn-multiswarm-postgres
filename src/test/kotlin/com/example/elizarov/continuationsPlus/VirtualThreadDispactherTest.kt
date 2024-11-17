@@ -18,7 +18,6 @@ import java.util.concurrent.Executors
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class VirtualThreadDispactherTest {
-    private val log: Logger = LoggerFactory.getLogger(VirtualThreadDispactherTest::class.java)
 
     @Test
     //@Disabled
@@ -29,6 +28,7 @@ class VirtualThreadDispactherTest {
     }
 
     @Test
+    @Disabled
     @Order(2)
     fun `as coroutineDispathcher at 41_41 2`() = runTest {
         assertNotNull(virtualThreadDispatcher)

@@ -51,7 +51,7 @@ class SwarmBuildTest {
 
     @Test
     @Order(1)
-    fun `build fitness Function with random Evenets`() = runTest {
+    fun `build fitness Function with random Events`() = runTest {
         val rFunction: RandomSlowFitnessFunction = RandomSlowFitnessFunction()
         val longArray = longArrayOf(101.22.toLong(), 202L, -10L)
         val fitness = rFunction.getFitness(longArray)
